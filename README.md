@@ -28,4 +28,4 @@ Javascript, HTML, CSS, Astro, Zod schema, nanocomponents
 
 [Documentation](https://astro.build/)
 
-go and check it out the astro build official Documentation and make your own simple static website for youe minimal use 
+go and check it out the astro build official Documentation and make your own simple static website for your minimal use 
