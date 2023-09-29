@@ -1,7 +1,8 @@
 import { useStore } from '@nanostores/solid';
 import { $cart as cart, removeItemFromCart, subtotal } from '../stores/cart';
 import styles from './cart.module.css';
-import { Show, createSignal } from 'solid-js';
+import { createSignal } from 'solid-js';
+import { Show } from 'solid-js';
 
 function formatCurrency(amout: number) {
 	return new Intl.NumberFormat('en-IN', {
@@ -26,7 +27,7 @@ const EmptyState = () => {
 };
 
 const CheckoutNotice = () => {
-	return <p class={styles.notice}>Checkout the cart</p>;
+	return <p class={styles.notice}>Checkout is not implemented</p>;
 };
 
 export const Cart = () => {
@@ -61,14 +62,14 @@ export const Cart = () => {
 				</ul>
 				<div class={styles.details}>
 					<p class={styles.subtotal}>
-						<span class={styles.label}>Subtotal:</span>
-						<span>{formatCurrency($subtotal())}</span>
+						<span class={styles.label}>Subtotal:</span>{' '}
+						{formatCurrency($subtotal())}
 					</p>
 					<p class={styles.shiping}>
 						<span class={styles.label}>Shiping:</span>
 						{''}
 						<del>₹18.00</del>
-						<ins>Free</ins>
+						<ins>FREE</ins>
 					</p>
 					<p class={styles.total}>
 						<span class={styles.label}>Total:</span>

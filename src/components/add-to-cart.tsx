@@ -1,5 +1,5 @@
 /** @jsxImportSource react */
-
+import { ReactNode } from 'react';
 import { addItemToCart } from '../stores/cart';
 
 export const AddToCart = ({ item }: { item: ShopItem }) => {

@@ -11,19 +11,22 @@
 	},
 	"dependencies": {
 		"@astrojs/react": "^3.0.2",
+		"@astrojs/rss": "^3.0.0",
 		"@astrojs/solid-js": "^3.0.1",
 		"@nanostores/react": "^0.7.1",
 		"@nanostores/solid": "^0.4.2",
-		"astro": "^2.5.5",
+		"astro": "^2.10.15",
+		"markdown-it": "^13.0.2",
 		"nanostores": "^0.9.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"sanitize-html": "^2.11.0",
 		"solid-js": "^1.7.12"
 	},
 	"devDependencies": {
 		"@types/markdown-it": "^12.2.3",
-		"@types/react": "^18.2.22",
-		"@types/react-dom": "^18.2.7",
+		"@types/react": "^18.2.23",
+		"@types/react-dom": "^18.2.8",
 		"@types/sanitize-html": "^2.9.0"
 	}
 }
